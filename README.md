@@ -1,13 +1,13 @@
 # Object#null? [![[version]](https://badge.fury.io/rb/null_question.svg)](http://badge.fury.io/rb/null_question)  [![[travis]](https://travis-ci.org/janlelis/null_question.png)](https://travis-ci.org/janlelis/null_question)
 
-Adds NilClass#null? #=> true and Object#null? #=> false
+Adds `NilClass#null? #=> true` and `Object#null? #=> false`
 
-Useful for implementing custom null objects that also return true for `#null?`
+Useful for implementing custom null objects that will also return true for `#null?`
 
 
 ## Setup
 
-Add to your `Gemfile`:
+Add to your **Gemfile**:
 
 ```ruby
 gem 'null_question'
@@ -19,7 +19,7 @@ gem 'null_question'
 ```ruby
 class NullObject
   def null?
-	  true
+    true
   end
 end
 
